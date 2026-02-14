@@ -14,6 +14,9 @@ python manage.py runserver
 
 (pip install -r requirements.txt)
 
+manage.py startapp nombre
+python manage.py migrate
+
 ## Volver a trabajar en entorno virtual 
 cd nombre_proyecto
 venv\Scripts\activate
@@ -44,9 +47,10 @@ db.sqlite3
 .DS_Store
 
 ## Subir el Repo
+echo "# Nuevo proyecto" >> README.md
 git init
 git add .
 git commit -m "Initial Django project setup"
-git remote add origin https://github.com/tu_usuario/nombre_repo.git
 git branch -M main
+git remote add origin https://github.com/tu_usuario/nombre_repo.git
 git push -u origin main
