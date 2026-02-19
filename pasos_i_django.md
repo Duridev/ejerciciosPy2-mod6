@@ -14,7 +14,7 @@ python manage.py runserver
 
 (pip install -r requirements.txt)
 
-manage.py startapp nombre
+python manage.py startapp nombre
 python manage.py migrate
 
 ## Volver a trabajar en entorno virtual 
